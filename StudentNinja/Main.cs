@@ -22,35 +22,40 @@ namespace StudentNinja
             //Console.WriteLine(newStudent.StudentName + " has rank of: " + newStudent.StudentRank);
             //Console.ReadLine();
 
-            var classList = new Dictionary<string, Student>();
-            classList = MakeList();
-
-            var testName = "Keonna";
-            classList[testName].HelpAPeer();
-            classList[testName].CompleteProgram();
-            classList[testName].HelpAPeer();
-            Console.WriteLine(classList[testName].StudentName + " is a " + classList[testName].StudentRank);
-            Console.ReadLine();
+            var StudentList = new StudentList("Econ 101");
+            var testStudent = new Student("My name is test");
 
 
 
-        }
+        //    var classList = new Dictionary<string, Student>();
+        //    classList = MakeList();
 
-        // fake up the list of students for now
-        static Dictionary <string, Student> MakeList()
-        {
-            var studentList = new Dictionary <string, Student>();
+        //    var testName = "Keonna";
+        //    classList[testName].HelpAPeer();
+        //    classList[testName].CompleteProgram();
+        //    classList[testName].HelpAPeer();
+        //    Console.WriteLine(classList[testName].StudentName + " is a " + classList[testName].StudentRank);
+        //    Console.ReadLine();
 
-            studentList.Add("Nick", new Student("Nick"));
-            studentList.Add("Justin", new Student("Justin"));
-            studentList.Add("Keonna", new Student("Keonna"));
-            studentList.Add("Johnathon", new Student("Johnathon"));
-            studentList.Add("Mark", new Student("Mark"));
-            studentList.Add("Seth", new Student("Seth"));
 
-            return studentList;
 
         }
+
+        //// fake up the list of students for now
+        //static Dictionary <string, Student> MakeList()
+        //{
+        //    var studentList = new Dictionary <string, Student>();
+
+        //    studentList.Add("Nick", new Student("Nick"));
+        //    studentList.Add("Justin", new Student("Justin"));
+        //    studentList.Add("Keonna", new Student("Keonna"));
+        //    studentList.Add("Johnathon", new Student("Johnathon"));
+        //    studentList.Add("Mark", new Student("Mark"));
+        //    studentList.Add("Seth", new Student("Seth"));
+
+        //    return studentList;
+
+        //}
     }
     
 }
