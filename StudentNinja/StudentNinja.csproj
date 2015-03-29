@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E81E7005-4A5F-4772-8313-3CB2BAB3E35C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StudentNinja</RootNamespace>
     <AssemblyName>StudentNinja</AssemblyName>
@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="StudentList.cs" />
     <Compile Include="Student.cs" />
-    <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
