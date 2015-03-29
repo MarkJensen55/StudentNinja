@@ -32,6 +32,21 @@ namespace StudentNinja
             return classList.TryGetValue(InStudent.StudentName, out xx);
         }
 
+        // add a student to the list
+        public bool Add(Student newStudent)
+        {
+            if (!InList(newStudent))
+	        {
+		        classList.Add(newStudent.StudentName, newStudent);
+                return true; 
+            }
+                else
+	        {
+                return false;
+	        }
+	       
+        }
+
         public string ListName
         {
             get;
